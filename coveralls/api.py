@@ -48,7 +48,7 @@ class Coveralls(object):
 
         if os.environ.get('TRAVIS'):
             is_travis_or_circle = True
-            self.config['service_name'] = file_config.get('service_name', None) or 'travis-ci'
+            self.config['service_name'] = file_config.get('service_name', None) or 'travis-pro'
             self.config['service_job_id'] = os.environ.get('TRAVIS_JOB_ID')
         elif os.environ.get('CIRCLECI'):
             is_travis_or_circle = True
